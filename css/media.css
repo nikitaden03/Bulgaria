@@ -96,6 +96,19 @@
 		margin-left: 10px;
 	}
 
+	.contacts__ul {
+		padding-left: 0;
+	}
+
+	.contacts-main {
+		background-color: #fff;
+	}
+
+	.contacts {
+		box-shadow: none;
+		margin-bottom: 0;
+	}
+
 }
 
 @media screen and (max-width: 767px) {
@@ -214,6 +227,28 @@
 		height: auto;
 	}
 
+	.contacts__item {
+		padding-top: 50px;
+		padding-left: 0px;
+		text-align: center;
+	}
+
+	.contacts__header-item_mt {
+		margin-top: 0;
+	}
+
+	.contacts__item:nth-child(1) {
+		background: url(../img/phone.png) center top no-repeat;
+	}
+	
+	.contacts__item:nth-child(2) {
+		background: url(../img/email.png) center top no-repeat;
+	}
+	
+	.contacts__item:nth-child(3) {
+		background: url(../img/skype.png) center top no-repeat;
+	}
+}
 @media screen and (max-width: 500px) {
 	.prava {
 		display: none;
@@ -244,7 +279,7 @@
 		margin-left: 0;
 		left: 0;
 	}
-
+}
 @media screen and (max-width: 320px) {
 	h1 {
 		line-height: 40px;
@@ -275,5 +310,13 @@
 
 	.move__item img {
 		width: 100%;
+	}
+
+	.np {
+		padding: 0;
+	}
+
+	.form-contacts__consultation {
+		font-size: 16px;
 	}
 }
