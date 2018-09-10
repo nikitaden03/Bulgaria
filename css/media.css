@@ -77,11 +77,11 @@
 
 	.comment__arrow {
 		position: absolute;
-	    left: -12px;
+	    margin-left: -60px;
 	}
 
 	.coment__man {
-		margin-left: -59px;
+		margin-left: 9px;
 	}
 
 	.comment__arrow_r {
@@ -107,6 +107,11 @@
 	.contacts {
 		box-shadow: none;
 		margin-bottom: 0;
+	}
+
+	.coment__item {
+		padding: 5px 43px 0 150px;
+		margin: 0 auto 50px auto;
 	}
 
 }
@@ -146,7 +151,7 @@
 
 	.coment__item {
 		text-align: center;
-		padding: 88px 30px 0 30px;
+		padding: 158px 30px 0 30px;
 		
 	}
 
@@ -166,7 +171,7 @@
 	.coment__man {
 	    left: 50%;
 	    top: 0%;
-	    margin-top: -69px;
+	    margin-top: 9px;
 	    margin-left: -69px;
 	}
 
@@ -248,6 +253,14 @@
 	.contacts__item:nth-child(3) {
 		background: url(../img/skype.png) center top no-repeat;
 	}
+
+	.coment__item {
+		width: 98%;
+	}
+
+	.comment__arrow {
+		display: none;
+	}
 }
 @media screen and (max-width: 500px) {
 	.prava {
@@ -318,5 +331,9 @@
 
 	.form-contacts__consultation {
 		font-size: 16px;
+	}
+
+	.coment__item {
+		width: auto;
 	}
 }

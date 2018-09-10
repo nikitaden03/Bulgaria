@@ -480,8 +480,9 @@ margin-left: -21px;
 
 .coment__item {
 	box-shadow: 1px 2px 4px 0px rgba(149, 147, 147, 0.33); 
-	padding: 5px 43px 0 126px;
+	padding: 15px 43px 15px 166px;
 	position: relative;
+    margin: 0 auto;
 	margin-bottom: 50px;
 }
 
@@ -523,13 +524,21 @@ margin-left: -21px;
 	left: 0;
 	top: 50%;
 	margin-top: -69px;
-	margin-left: -69px;
+	margin-left: 9px;
 }
 
 .comment__arrow {
 	font-size: 3rem;
 	color: #23aae2;
 	margin-top: 55px;
+	position: absolute;
+	top: 0;
+	margin-left: -32px;
+}
+
+.comment__arrow_r {
+	right: 0%;
+	margin-right: -32px;
 }
 
 .comment__arrow:hover {
@@ -872,3 +881,22 @@ strong {
 	line-height: 23px;
 	letter-spacing: 0.02em;
 }
+
+.presentation {
+	float: left;
+	width: 17px;
+	height: 17px;
+	border: 1px dashed #23aae2;
+	border-radius: 50%;
+	list-style: none;
+	margin-right: 10px;
+}
+
+.presentation button {
+	opacity: 1;
+}
+
+.slik-active {
+	background: #23aae2;
+}
+
