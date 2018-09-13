@@ -1010,3 +1010,21 @@ strong {
 	background: #23aae2;
 }
 
+
+.intl-tel-input.separate-dial-code .selected-flag {
+    background-color: rgba( 250,250,250,0) !important;
+    display: table;
+}
+
+.pa {
+	position: static !important;
+}
+
+.intl-tel-input {
+    position: relative;
+    display: block !important;
+}
+
+.form__btn {
+	margin-top: 10px;
+}

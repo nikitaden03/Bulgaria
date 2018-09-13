@@ -5,7 +5,6 @@ $(function(){
         dots: true,
         // dotsClass: 'round__item',
     });
-<<<<<<< HEAD
 });
 
 $("#phone").intlTelInput({ 
@@ -22,21 +21,18 @@ $("#phone").on("countrychange", function(e, countryData) {
     $('#phone').mask(mask1);
 });
 
-$(document).ready(function() {
-	$('#form').submit(function() { // проверка на пустоту заполненных полей. Атрибут html5 — required не подходит (не поддерживается Safari)
-		$.ajax({
-			type: "POST",
-			url: "../mail.php",
-			data: $(this).serialize()
-		}).done(function() {
-            $('#myModal').modal({
-                keyboard: false
-              })
-		});
-		return false;
-	});
-});
+// $(document).ready(function() {
+// 	$('#form').submit(function() { // проверка на пустоту заполненных полей. Атрибут html5 — required не подходит (не поддерживается Safari)
+// 		$.ajax({
+// 			type: "POST",
+// 			url: "../mail.php",
+// 			data: $(this).serialize()
+// 		}).done(function() {
+//             $('#myModal').modal({
+//                 keyboard: false
+//               })
+// 		});
+// 		return false;
+// 	});
+// });
 
-=======
-});
->>>>>>> parent of aee9115... Начинаем форму

@@ -32,6 +32,7 @@
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/media.css">
+	<link rel="stylesheet" href="css/intlTelInput.min.css">
 </head>
 <body>
 	<header>
@@ -172,7 +173,7 @@
 							<img src="img/img1.png" class=" dream__img dream__img1" alt="">
 							<img src="img/img2.png" class=" dream__img dream__img2" alt="">
 							<img src="img/img3.png" class=" dream__img dream__img3" alt="">
-							<div class="pa"></div>
+							<div class="pas"></div>
 							<div class="button-a"><a href="#"><i class="fa fa-life-ring"></i></a></div>
 						</div>
 					</div>
@@ -278,7 +279,7 @@
 					<form action="">
 						<input type="text" class="form__input" required placeholder="Имя">
 						<input type="mail" class="form__input" required placeholder="E-mail">
-						<input type="tel" class="form__input" required placeholder="Телефон">
+						<input type="tel" name="phone" id="phone" class="form__input" required>
 						<input type="submit" class="form__btn" value="Заказать консультацию">
 					</form>
 				</div>
@@ -309,7 +310,12 @@
 		
   
 	<script src="js/jquery-3.3.1.min.js"></script>
-	<script src="js/script.js"></script>
+	<script src="js/bootstrap.min.js"></script>
 	<script src="js/slick.min.js"></script>
+	<script src="js/intlTelInput.min.js"></script>
+
+	<script src="js/utils.js"></script>
+	<script src="js/script.js"></script>
+
 </body>
 </html>

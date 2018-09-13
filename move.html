@@ -28,6 +28,7 @@
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/media.css">
+	<link rel="stylesheet" href="css/intlTelInput.min.css">
 </head>
 <body>
 	<header class="header-move">
@@ -129,7 +130,7 @@
 					<form action="">
 						<input type="text" class="form__input" required placeholder="Имя">
 						<input type="mail" class="form__input" required placeholder="E-mail">
-						<input type="tel" class="form__input" required placeholder="Телефон">
+						<input type="tel" name="phone" id="phone" class="form__input" required>
 						<input type="submit" class="form__btn" value="Заказать консультацию">
 					</form>
 				</div>
@@ -155,6 +156,15 @@
 			</div>
 		</div>
 	</div>
+
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/intlTelInput.min.js"></script>
+
+	<script src="js/utils.js"></script>
+	<script src="js/script.js"></script>
+
 </footer>
 
 </html>

@@ -29,7 +29,8 @@
 	<!-- Подключаем  CSS Файлы-->
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/intlTelInput.min.css">
 </head>
 <body>
 <header class="header-move">
@@ -139,12 +140,12 @@
 		<div class="row">
 			<div class="col-md-4 col-sm-3 hidden-xs"></div>
 			<div class="col-md-4 col-sm-6 col-xs-12">
-				<form action="">
-					<input type="text" class="form__input" required placeholder="Имя">
-					<input type="mail" class="form__input" required placeholder="E-mail">
-					<input type="tel" class="form__input" required placeholder="Телефон">
-					<input type="submit" class="form__btn" value="Заказать консультацию">
-				</form>
+                <form action="">
+                    <input type="text" class="form__input" required placeholder="Имя">
+                    <input type="mail" class="form__input" required placeholder="E-mail">
+                    <input type="tel" name="phone" id="phone" class="form__input" required>
+                    <input type="submit" class="form__btn" value="Заказать консультацию">
+                </form>
 			</div>
 			<div class="col-md-4 col-sm-3 hidden-xs"></div>
 		</div>
@@ -168,5 +169,14 @@
 		</div>
 	</div>
 </footer>
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/intlTelInput.min.js"></script>
+
+<script src="js/utils.js"></script>
+<script src="js/script.js"></script>
+
 </body>
 </html>
