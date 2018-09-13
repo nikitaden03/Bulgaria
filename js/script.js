@@ -19,4 +19,20 @@ $("#phone").on("countrychange", function(e, countryData) {
     $("#phone").val('');
     var mask1 = $("#phone").attr('placeholder').replace(/[0-9]/g, 0);
     $('#phone').mask(mask1);
-  });
+});
+
+$(document).ready(function() {
+	$('#form').submit(function() { // проверка на пустоту заполненных полей. Атрибут html5 — required не подходит (не поддерживается Safari)
+		$.ajax({
+			type: "POST",
+			url: "../mail.php",
+			data: $(this).serialize()
+		}).done(function() {
+            $('#myModal').modal({
+                keyboard: false
+              })
+		});
+		return false;
+	});
+});
+

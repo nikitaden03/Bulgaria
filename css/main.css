@@ -405,7 +405,7 @@ margin-left: -21px;
 	z-index: 2;
 }
 
-.pa {
+.pas {
 	position: absolute;
 	width: 100%;
 	height: 70px;
@@ -619,7 +619,7 @@ form input {
 	background: rgba(0,0,0,0);
 	text-transform: uppercase;
 	font-size: 1rem;
-	margin-top: 10px;
+	margin-top: 10px !important;
 }
 
 .form__btn:hover {
@@ -824,6 +824,112 @@ strong {
 	line-height: 76px;
 	margin-bottom: 66px;
 }
+
+.contacts-main {
+	background: #f7f7f7;
+}
+
+.contacts {
+	margin-top: -83px;
+	background: #fff;
+	padding-bottom: 80px;
+	padding-top: 60px;
+	padding-bottom: 60px;
+	margin-bottom: 90px;
+	box-shadow: 0px 3px 1px 0px rgba(159, 160, 160, 0.18); 	
+}
+
+.contacts__header {
+	font-size: 17px;
+	margin-bottom: 60px;
+}
+
+.contacts__header-item	{
+	font-size: 18px;
+	line-height: 28px;
+	font-weight: 900;
+	text-transform: uppercase;
+	margin-bottom: 5px;
+}
+
+.contacts__header-item_mt {
+	margin-top: 80px;
+}
+
+.contacts__ul {
+	padding-left: 80px;
+}
+
+.contacts__item {
+	padding-left: 62px;
+	list-style: none;
+	margin-bottom: 44px;
+}
+
+.contacts__text {
+	font-size: 16;
+	line-height: 24px;
+}
+
+.contacts__item:nth-child(1) {
+	background: url(../img/phone.png) left top no-repeat;
+}
+
+.contacts__item:nth-child(2) {
+	background: url(../img/email.png) left top no-repeat;
+}
+
+.contacts__item:nth-child(3) {
+	background: url(../img/skype.png) left top no-repeat;
+}
+
+.form-contacts {
+	background-color: #11b2f5;
+	padding: 42px 30px;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-ms-border-radius: 3px;
+	-o-border-radius: 3px;
+}
+
+.form__header {
+	font-size: 25px;
+	line-height: 24px;
+	text-transform: uppercase;
+	font-weight: 900;
+	color: #ffffff;
+	text-align: center;
+}
+
+.form__header span {
+	font-size: 20px;
+	letter-spacing: 0.09em;
+}
+
+.form-contacts__consultation {
+	font-size: 18px;
+	line-height: 30px;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 0.12em;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+
+.form__input {
+	height: 50px;
+	margin: 0 auto;
+	display: block;
+	margin-bottom: 8px;
+}
+
+.form__btn {
+	height: 50px;
+	margin: 0 auto;
+	display: block;
+} 
 
 .partner-header {
 	font-size: 29px;
