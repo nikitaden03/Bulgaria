@@ -5,6 +5,7 @@ $(function(){
         dots: true,
         // dotsClass: 'round__item',
     });
+<<<<<<< HEAD
 });
 
 $("#phone").intlTelInput({ 
@@ -36,3 +37,6 @@ $(document).ready(function() {
 	});
 });
 
+=======
+});
+>>>>>>> parent of aee9115... Начинаем форму
