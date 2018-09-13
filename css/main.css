@@ -619,6 +619,7 @@ form input {
 	background: rgba(0,0,0,0);
 	text-transform: uppercase;
 	font-size: 1rem;
+	margin-top: 10px;
 }
 
 .form__btn:hover {
@@ -900,3 +901,10 @@ strong {
 	background: #23aae2;
 }
 
+.intl-tel-input {
+	display: block !important;
+}
+
+.pa {
+	display: none;
+}

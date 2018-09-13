@@ -6,3 +6,17 @@ $(function(){
         // dotsClass: 'round__item',
     });
 });
+
+$("#phone").intlTelInput({ 
+    defaultCountry: [],
+    preferredCountries: ['ru' , 'ua'], 
+    separateDialCode: true,
+    geoIpLookup: function(callback) { $.get('http://ipinfo.io', function() {}, "jsonp").always(function(resp) { var countryCode = (resp && resp.country) ? resp.country : ""; callback(countryCode); }); }, utilsScript: "utils.js", //для форматирования/плейсхолдера и т.д. // 
+});
+
+
+$("#phone").on("countrychange", function(e, countryData) {
+    $("#phone").val('');
+    var mask1 = $("#phone").attr('placeholder').replace(/[0-9]/g, 0);
+    $('#phone').mask(mask1);
+  });

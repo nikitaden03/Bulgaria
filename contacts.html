@@ -27,7 +27,8 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">  
 
 	<!-- Подключаем  CSS Файлы-->
-	<link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/intlTelInput.min.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/media.css">
 </head>
@@ -119,7 +120,7 @@
                                             <form action="">
                                                 <input type="text" class="form__input" required placeholder="Имя">
                                                 <input type="mail" class="form__input" required placeholder="E-mail">
-                                                <input type="tel" class="form__input" required placeholder="Телефон">
+                                                <input type="tel" id="phone" class="form__input" required>
                                                 <input type="submit" class="form__btn" value="Заказать консультацию">        
                                             </form>
                                         </div>
@@ -152,5 +153,10 @@
 		</div>
 	</div>
 </footer>
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/intlTelInput.min.js"></script>
+<script src="js/utils.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
