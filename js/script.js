@@ -1,3 +1,7 @@
+$(".gamb").click(function(){
+    $("#menu2").toggleClass("active-menu"); 
+});
+
 $(function(){
     $('.slider').slick({
         prevArrow: '<div class="comment__arrow comment__arrow_l"><i class="fa fa-angle-left"></i></div>',
@@ -5,34 +9,40 @@ $(function(){
         dots: true,
         // dotsClass: 'round__item',
     });
-});
+}); 
 
 $("#phone").intlTelInput({ 
     defaultCountry: [],
     preferredCountries: ['ru' , 'ua'], 
-    separateDialCode: true,
+    // separateDialCode: true,
     geoIpLookup: function(callback) { $.get('http://ipinfo.io', function() {}, "jsonp").always(function(resp) { var countryCode = (resp && resp.country) ? resp.country : ""; callback(countryCode); }); }, utilsScript: "utils.js", //для форматирования/плейсхолдера и т.д. // 
 });
 
+$('form').submit(function(event) {
+    event.preventDefault();
+    $.ajax({
+      type: $(this).attr('method'),
+      url: $(this).attr('action'),
+      data: new FormData(this),
+      contentType: false,
+      cache: false,
+      processData: false,
+      success: function(result) {
+        $('#exampleModal1').arcticmodal();
+      },
+    });
+  });
 
-$("#phone").on("countrychange", function(e, countryData) {
-    $("#phone").val('');
-    var mask1 = $("#phone").attr('placeholder').replace(/[0-9]/g, 0);
-    $('#phone').mask(mask1);
-});
+  jQuery(document).ready(function() {
+    jQuery("a.arrow").click(function () {
+      elementClick = jQuery(this).attr("href")
+      destination = jQuery(elementClick).offset().top;
+      jQuery("html:not(:animated),body:not(:animated)").animate({scrollTop: destination}, 1100);
+      return false;
+    });
+  });
+ 
 
-// $(document).ready(function() {
-// 	$('#form').submit(function() { // проверка на пустоту заполненных полей. Атрибут html5 — required не подходит (не поддерживается Safari)
-// 		$.ajax({
-// 			type: "POST",
-// 			url: "../mail.php",
-// 			data: $(this).serialize()
-// 		}).done(function() {
-//             $('#myModal').modal({
-//                 keyboard: false
-//               })
-// 		});
-// 		return false;
-// 	});
-// });
+
+
 
